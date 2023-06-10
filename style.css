@@ -1,0 +1,81 @@
+body{
+    background-color: #008284;
+    margin: 0px;
+}
+
+.middle_menu{ /*중간 메뉴 부분*/
+    position: absolute;
+    top:100px; left:300px;
+    background-color: #B1AFB2;
+}
+
+.bottom_menu{   /*하단바*/
+    width: 100%;
+    height: 5%;
+    background-color: #C6C4C7;
+    Position: fixed;
+    bottom: 0px;
+
+    text-align: right;
+    text-size-adjust : 100%;
+    font-size: 25px;
+}
+
+#count{
+    margin: 0px;
+}
+
+
+ul{
+    margin: 0;
+    padding-left: 20px;
+}
+
+ul li{ /*메뉴의 색깔*/
+    display: inline-block;
+    list-style-type: none;
+    margin: 0px;
+    width: 150px; /*메뉴 간격*/
+}
+ul li a{
+    text-decoration-line: none;
+    color:gray;
+    line-height: 1.5em;
+}
+
+ul li label{
+    text-decoration-line: none;
+    color:gray;
+    line-height: 3em;
+}
+
+a:hover, label:hover{ /*마우스를 링크 위에 올리면 색깔을 회색 -> 검은색으로*/
+    color:black; 
+}
+
+
+
+.bg_white{ /*서브메뉴 배경색, 패딩 조절*/
+    background-color: white;
+    padding: 20px;
+}
+
+#menu_myTest{
+    background:linear-gradient(to right, rgb(107, 107, 107), rgb(185, 185, 185));
+    color: white;
+}
+
+
+#div_Subscreen{
+    background-color: white;
+    padding: 20px;
+}
+
+#background_icon{
+    position: absolute;
+    left: 40px;
+}
+#background_icon a{     /* 배경화면에 a태그의 글자 색 흰색으로 */
+    color:white;
+    text-decoration: none;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Engine marster</title>
+        <link href = "style.css" rel = "stylesheet" type = "text/css">
+        <script src = "app.js"> </script>
+    </head>
+    <body>
+        <!--배경화면-->
+        <div id = background_icon>
+            <a href=  "index.html" style = "position: absolute; top: 100px">
+                <img src ="images/mytesticon.png" width="80px">내 시험
+            </a>
+            <a href=  "https://ideone.com/" target = "_blank" title = "웹에서 코딩하기" style = "position: absolute; top: 250px">
+                <img src ="images/codingSiteicon.png" width="80px">ideone
+            </a>
+            <a href=  "https://github.com/lego404" target = "_blank" title="코드 보러가기" style = "position: absolute; top: 420px">
+                <img src ="images/githubicon.png" width="80px">GitHub
+            </a>
+        </div>
+        <!--서브 화면-->
+        <div class = "middle_menu">
+            <table border = "1" width = "906px">
+                <colgroup>
+                    <col>
+                </colgroup>
+                <!--상단바-->
+                <tr> 
+                    <td id = "menu_myTest" colspan="2"><img src = "images/mytesticon.png" width="20px">내 시험
+                        <a href = "backgrond.html">
+                            <img src = "images/xBOXicon.png" width = "18px" style = "float: right; margin: 5px 5px 3px 0px;">
+                        </a>
+                    </td>
+                </tr>
+                <!--메뉴-->
+                <tr>
+                    <table border = "1">
+                        <colgroup>
+                            <col style = "width: 100px;">
+                            <col style = "width: 800px;">
+                        </colgroup>
+                        <tr>
+                            <td colspan="2">
+                                <ul>
+                                    <li><a href = "http://www.q-net.or.kr/crf005.do?id=crf00505&gSite=Q&gId=&jmCd=1320&examInstiCd=1" target="_blank" title  = "시험 정보">시험 정보</a></li>
+                                    <li><a href = "https://www.q-net.or.kr/rcv001.do?id=rcv00103&gSite=Q&gId=" target = "_blank" title = "접수 사이트"> 접수사이트</a></li>
+                                    <li><a href = "https://www.q-net.or.kr/anc001.do?id=anc001011&gSite=Q&gId=#" target = "_blank" title = "합격자 조회">합격자조회</a></li>
+                                    <li><a href = "https://www.q-net.or.kr/isr001.do?id=isr00101&gSite=Q&gId=" target = "_blank" title = "자격증 발급 신청">자격증발급</a></li>
+                                    <li><a href = "./정보처리기사 출제기준(2023.1.1.~2025.12.31).hwp" title = "출제기준" download>출제기준</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <!--주소창-->
+                        <tr>
+                            <td>주소</td>
+                            <td style = "background-color: white;"><label onclick='setAddress()'><img src = "images/mytesticon.png" width="20px">내 시험</label> <span id = "address"></span></td>
+                        </tr>
+                    </table>
+                </tr>
+                <!--메인화면-->
+                <tr>
+                    <table border = "1" height = "400px">
+                        <colgroup>
+                            <col style = "width: 250px;">
+                            <col style = "width: 650px;">
+                        </colgroup>
+                        <tr>
+                            <td class = "bg_white"><div> 
+                                <details open>
+                                    <summary><img src = "images/mytesticon.png" width="20px">내 시험</summary>
+                                    <p>
+                                        <ul>
+                                            <li><label onclick='setCBT()'><img src = "images/cbticon.png" width="15px">CBT 사이트</label></li>
+                                            <li><label onclick='setCoding()'><img src = "images/codingicon.png" width="20px">정처기 실습</label></li>
+                                            <li><label onclick='setBookList()'><img src = "images/Bookicon.png" width="15px">공부 책 목록</label></li>
+                                            <li><label onclick='setStudyCafe()'><img src = "images/cafeicon.png" width="15px">공부 사이트</label></li>
+                                            <li><label onclick='setSummary()'><img src = "images/Summaryicon.png" width="15px">필기 요약 정리</label></li>
+                                        </ul>
+                                    </p>
+                                </details>
+                            </div></td>
+                            <td id = "div_Subscreen">공부를 좀 하시길 바랍니다</td>
+                        </tr>
+                    </table>
+                </tr>
+            </table>
+        </div>
+        
+        <div class ="bottom_menu">
+            <b id="count"></b>
+        </div>
+    </body>
+</html>
