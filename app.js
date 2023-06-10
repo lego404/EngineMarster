@@ -103,7 +103,7 @@ function setStudyCafe() {
 function setSummary() { /* 필기 요약 정리 -완료 */
   const element = document.getElementById('div_Subscreen');
   element.innerHTML 
-    = '<iframe width = "600px" height = "400px" src="https://velog.io/@aljongjong/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC-%ED%95%84%EA%B8%B0-%EC%A0%95%EB%A6%AC">필기 요약 정리</iframe>';
+    = '공사중';
 
   /* "주소"에 텍스트 추가 */
   const address_set = document.getElementById('address');
